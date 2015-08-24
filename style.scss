@@ -1,0 +1,55 @@
+/*   
+Theme Name: Power Marketing
+Theme URI: http://www.power-marketing.com
+Description: Custom Wordpress Theme developed by Michael Roach
+Author: Power Marketing
+Author URI: http://www.power-marketing.com/
+*/
+
+$white:#ffffff;
+$black: #000;
+
+html {}
+body{}
+h1,h2,h3,h4,h5 {}
+
+header {
+  .logo {}
+  nav {}
+}
+
+footer {}
+
+// Small screens
+@media only screen  {
+}
+
+@media only screen and (max-width: 40em) {
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+} 
+ 
+// Large screens
+@media only screen and (min-width: 64.063em) {
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+} 
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {
+}
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+}
+
+// Kill WP Image Floats in css/wp.css
+@media only screen and (max-width:640px) {
+  .alignleft, img.alignleft, .alignright, img.alignright, blockquote.left, blockquote.right {display:block !important; text-align:center !important; margin:0 auto !important; float: none !important;}
+  .alignleft, img.alignleft, .alignright, img.alignright {display:block; margin:0 auto;}
+}

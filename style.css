@@ -1,0 +1,19 @@
+/*   
+Theme Name: Power Marketing
+Theme URI: http://www.power-marketing.com
+Description: Custom Wordpress Theme developed by Michael Roach
+Author: Power Marketing
+Author URI: http://www.power-marketing.com/
+*/
+@media only screen and (max-width: 640px) {
+  .alignleft, img.alignleft, .alignright, img.alignright, blockquote.left, blockquote.right {
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .alignleft, img.alignleft, .alignright, img.alignright {
+    display: block;
+    margin: 0 auto;
+  }
+}
