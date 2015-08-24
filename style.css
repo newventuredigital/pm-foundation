@@ -5,6 +5,10 @@ Description: Custom Wordpress Theme developed by Michael Roach
 Author: Power Marketing
 Author URI: http://www.power-marketing.com/
 */
+.inline-list > li:first-child {
+  margin-left: 0;
+}
+
 @media only screen and (max-width: 640px) {
   .alignleft, img.alignleft, .alignright, img.alignright, blockquote.left, blockquote.right {
     display: block !important;

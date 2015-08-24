@@ -10,15 +10,19 @@
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <?php wp_head(); ?>
 </head>
 <body>
 
 <header>
-  <!-- Logo Image Link -->
-  <div class="logo"><a href="<?php echo $site_url; ?>"><img src="#" alt=""></a></div>
-  
-  <!-- Basic Navigation Menu -->
-  <?php wp_nav_menu(array('container' => false, 'menu' => 'Main Nav', 'menu_id' => 'main', 'items_wrap' => '<nav class="inline-list %2$s">%3$s</nav>')); ?>
+  <div class="row">
+    <div class="columns">
+      <!-- Logo Image Link -->
+      <div class="logo"><a href="<?php echo $site_url; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/x.jpg" alt=""></a></div>
+      
+      <!-- Basic Navigation Menu -->
+      <?php wp_nav_menu(array('container' => false, 'menu' => 'Main Nav', 'menu_id' => 'main', 'items_wrap' => '<nav class="inline-list %2$s">%3$s</nav>')); ?>
+    </div>
+  </div>
 
-<?php wp_head(); ?>
 </header>

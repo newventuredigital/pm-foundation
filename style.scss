@@ -13,9 +13,13 @@ html {}
 body{}
 h1,h2,h3,h4,h5 {}
 
+.inline-list>li:first-child {margin-left:0;}
+
 header {
   .logo {}
-  nav {}
+  nav {
+    ul {}
+  }
 }
 
 footer {}
@@ -40,13 +44,6 @@ footer {}
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
 } 
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) {
-}
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-}
 
 // Kill WP Image Floats in css/wp.css
 @media only screen and (max-width:640px) {
