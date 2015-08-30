@@ -1,7 +1,7 @@
 <footer>
   <div class="row">
     <div class="columns">
-      &copy;<?php echo date('Y');?> <?php bloginfo('title'); ?>, All Rights Reserved.
+      &copy; <?php echo date('Y');?> <?php bloginfo('title'); ?>, All Rights Reserved.
     </div>
   </div>
 </footer>
