@@ -11,16 +11,33 @@ $black: #000;
 
 html {}
 body{}
-h1,h2,h3,h4,h5 {}
-
-.inline-list>li:first-child {margin-left:0;}
 
 header {
   .logo {}
-  nav {
-    ul {}
-  }
+  nav {position:relative; z-index:99;
+    ul {margin-left:0; background:$black;
+      ul {display:none;
+        li {display:block; margin-left:0;
+          a {display:block; margin:6px 8px;}
+        }
+      }
+      li {list-style:none; display:inline-block; margin-left:1.5rem;
+        a {display:block; margin:10px 0;}
+      &:first-child {margin-left:0;}
+      }
+      li:hover ul {display:block; position:absolute;}
+} } }
+
+a.left-off-canvas-toggle {font-size:1.5rem; 
+  i {color:$white; background:$black; padding:6px 8px; border-radius:5px;}
 }
+
+aside.left-off-canvas-menu {
+  nav {
+    ul {margin-left:0; margin:15px 0 0 15px;
+      li {list-style:none; display:block;
+        a {display:block; margin:10px 0;}
+} } } }
 
 footer {}
 

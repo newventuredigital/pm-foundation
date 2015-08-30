@@ -12,16 +12,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <?php wp_head(); ?>
 </head>
-<body>
+
+<body <?php body_class(); ?>>
+
+<!-- Start off Canvas Opening -->
+<div class="off-canvas-wrap" data-offcanvas>
+<div class="inner-wrap">
+<aside class="left-off-canvas-menu">
+  <?php wp_nav_menu(array('container' => false, 'menu' => 'Main Nav', 'menu_id' => 'main', 'items_wrap' => '<nav class="%2$s"><ul>%3$s</ul></nav>')); ?>
+</aside>
+<!-- End off Canvas Opening -->
 
 <header>
   <div class="row">
     <div class="columns">
       <!-- Logo Image Link -->
-      <div class="logo"><a href="<?php echo $site_url; ?>"><img src="<?php bloginfo('template_directory'); ?>/img/x.jpg" alt=""></a></div>
+      <div class="logo"><a href="<?php bloginfo('siteurl'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/x.jpg" alt=""></a></div>
       
       <!-- Basic Navigation Menu -->
-      <?php wp_nav_menu(array('container' => false, 'menu' => 'Main Nav', 'menu_id' => 'main', 'items_wrap' => '<nav class="inline-list %2$s">%3$s</nav>')); ?>
+      <?php wp_nav_menu(array('container' => false, 'menu' => 'Main Nav', 'menu_id' => 'main', 'items_wrap' => '<nav class="show-for-large-up %2$s"><ul>%3$s</ul></nav>')); ?>
+      <a class="left-off-canvas-toggle hide-for-large-up" href="#" ><i class="fa fa-bars"></i></a>
     </div>
   </div>
 

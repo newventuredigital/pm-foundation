@@ -6,6 +6,12 @@
   </div>
 </footer>
 
+<!-- Close Off Canvas Start -->
+<a class="exit-off-canvas"></a>
+</div>
+</di>
+<!-- Close Off Canvas End -->
+
 <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
 <script>
