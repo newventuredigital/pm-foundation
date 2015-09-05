@@ -12,12 +12,9 @@
 </di>
 <!-- Close Off Canvas End -->
 
-<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
+<?php wp_footer(); ?>
 <script>
 $(document).foundation();
 </script>
-
-<?php wp_footer(); ?>
 </body>
 </html>

@@ -11,22 +11,8 @@ header nav {
 }
 
 header nav ul {
-  margin-left: 0;
+  margin: 0;
   background: #000;
-}
-
-header nav ul ul {
-  display: none;
-}
-
-header nav ul ul li {
-  display: block;
-  margin-left: 0;
-}
-
-header nav ul ul li a {
-  display: block;
-  margin: 6px 8px;
 }
 
 header nav ul li {
@@ -47,6 +33,20 @@ header nav ul li:first-child {
 header nav ul li:hover ul {
   display: block;
   position: absolute;
+}
+
+header nav ul ul {
+  display: none;
+}
+
+header nav ul ul li {
+  display: block;
+  margin-left: 0;
+}
+
+header nav ul ul li a {
+  display: block;
+  margin: 6px 8px;
 }
 
 a.left-off-canvas-toggle {
@@ -75,6 +75,20 @@ aside.left-off-canvas-menu nav ul li a {
   margin: 10px 0;
 }
 
+aside.left-off-canvas-menu nav ul ul {
+  margin-left: 0;
+}
+
+.post-navigation {
+  text-align: center;
+}
+
+.post-navigation .seperator {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* ############################## Media Queries ############################## */
 @media only screen and (max-width: 640px) {
   .alignleft, img.alignleft, .alignright, img.alignright, blockquote.left, blockquote.right {
     display: block !important;

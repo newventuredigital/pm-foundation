@@ -15,52 +15,66 @@ body{}
 header {
   .logo {}
   nav {position:relative; z-index:99;
-    ul {margin-left:0; background:$black;
-      ul {display:none;
-        li {display:block; margin-left:0;
-          a {display:block; margin:6px 8px;}
-        }
-      }
+    // Top Level Links
+    ul {margin:0; background:$black;
       li {list-style:none; display:inline-block; margin-left:1.5rem;
         a {display:block; margin:10px 0;}
       &:first-child {margin-left:0;}
       }
       li:hover ul {display:block; position:absolute;}
-} } }
+      // Sub Navigation
+      ul {display:none;
+        li {display:block; margin-left:0;
+          a {display:block; margin:6px 8px;}
+} } } } }
 
+// Mobile Button
 a.left-off-canvas-toggle {font-size:1.5rem; 
   i {color:$white; background:$black; padding:6px 8px; border-radius:5px;}
 }
 
+// Mobile Navigation
 aside.left-off-canvas-menu {
   nav {
+    // Mobile Top Level
     ul {margin-left:0; margin:15px 0 0 15px;
       li {list-style:none; display:block;
         a {display:block; margin:10px 0;}
-} } } }
+      }
+    // Mobile Sub Navigation
+    ul {margin-left:0;
+      li {
+        a {}
+} } } } }
 
 footer {}
 
-// Small screens
-@media only screen  {
+.post-excerpt {}
+.post-single {}
+
+.post-navigation {text-align:center;
+  .seperator {display:inline-block; margin:0 15px;}
 }
 
-@media only screen and (max-width: 40em) {
-}
+/* ############################## Media Queries ############################## */
 
-// Medium screens
-@media only screen and (min-width: 40.063em) {
-}
+// Small AND Medium Screens
+@media only screen and (max-width:64em) {}
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-} 
+// Small Only
+@media only screen and (max-width: 40em) {}
+
+// Medium Up
+@media only screen and (min-width: 40.063em) {}
+
+// Medium Only
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {} 
  
-// Large screens
-@media only screen and (min-width: 64.063em) {
-}
+// Large Up
+@media only screen and (min-width: 64.063em) {}
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-} 
+// Large Only
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {} 
 
 // Kill WP Image Floats in css/wp.css
 @media only screen and (max-width:640px) {

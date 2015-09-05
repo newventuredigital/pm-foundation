@@ -3,8 +3,8 @@
   <div class="row">
     <div class="columns">
       <div class="post-excerpt">
-        <a href="<?php the_permalink();?>"><h3><?php the_title(); ?></h3></a>
-        <p><?php echo excerpt(50); ?></p>
+        <h1><?php the_title(); ?></h1>
+        <?php the_content(); ?>
       </div>
     </div>
   </div>
