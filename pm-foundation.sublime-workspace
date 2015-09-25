@@ -63,10 +63,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "instal",
+		"height": 392.0,
+		"last_filter": "zf",
 		"selected_items":
 		[
+			[
+				"zf",
+				"Snippet: ZURB Foundation 5 Offcanvas"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -76,7 +80,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 460.0
 	},
 	"console":
 	{
@@ -226,7 +230,7 @@
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},

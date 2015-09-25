@@ -1,4 +1,5 @@
 <?php
+// http://realfavicongenerator.net/
 $base = get_template_directory_uri() . '/favicons';?>
 
 <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $base; ?>/apple-touch-icon-57x57.png">
