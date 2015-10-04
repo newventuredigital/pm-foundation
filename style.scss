@@ -37,13 +37,15 @@ a.left-off-canvas-toggle {font-size:1.5rem;
 aside.left-off-canvas-menu {
   nav {
     // Mobile Top Level
-    ul {margin-left:0; margin:15px 0 0 15px;
-      li {list-style:none; display:block;
-        a {display:block; margin:10px 0;}
+    ul {margin:0;
+      li {list-style:none; display:block; background:#444; margin-bottom:1px;
+        a {display:block; margin:0; padding:10px 15px;}
       }
     // Mobile Sub Navigation
     ul {margin-left:0;
-      li {
+      li {background:#333; margin-bottom:0;
+       &:first-child {padding-top:7.5px;}
+       &:last-child {padding-bottom:7.5px;}
         a {}
 } } } } }
 

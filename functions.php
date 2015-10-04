@@ -1,6 +1,6 @@
 <?php
 function pm_foundation_styles() {
-  wp_enqueue_style( 'foundation-normalize', get_template_directory_uri() . '/css/foundation/normalize.min.css' );
+  wp_enqueue_style( 'foundation-normalize', get_template_directory_uri() . '/css/normalize.min.css' );
   wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/foundation.min.css' );
   wp_enqueue_style( 'pm_foundation-style', get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'wordpress-helper', get_template_directory_uri() . '/css/wp.min.css' );

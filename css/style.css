@@ -41,25 +41,17 @@ a.left-off-canvas-toggle {
     border-radius: 5px; }
 
 aside.left-off-canvas-menu nav ul {
-  margin: 0; }
+  margin-left: 0;
+  margin: 15px 0 0 15px; }
   aside.left-off-canvas-menu nav ul li {
     list-style: none;
     display: block;
-    background: #444;
-    margin-bottom: 1px; }
+    background: #fff; }
     aside.left-off-canvas-menu nav ul li a {
       display: block;
-      margin: 0;
-      padding: 10px 15px; }
+      margin: 10px 0; }
   aside.left-off-canvas-menu nav ul ul {
     margin-left: 0; }
-    aside.left-off-canvas-menu nav ul ul li {
-      background: #333;
-      margin-bottom: 0; }
-      aside.left-off-canvas-menu nav ul ul li:first-child {
-        padding-top: 7.5px; }
-      aside.left-off-canvas-menu nav ul ul li:last-child {
-        padding-bottom: 7.5px; }
 
 .post-navigation {
   text-align: center; }
