@@ -3,8 +3,7 @@
   <div class="row">
     <div class="columns">
       <div class="post-excerpt">
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
+        <?php get_template_part('content', get_post_type()); ?>
       </div>
     </div>
   </div>

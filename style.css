@@ -5,32 +5,70 @@ Description: Custom Wordpress Theme developed by Michael Roach
 Author: Power Marketing
 Author URI: http://www.power-marketing.com/
 */
-header nav {
+body {
+  overflow: visible; }
+
+header nav.background {
   position: relative;
   z-index: 99; }
-  header nav ul {
+  header nav.background ul {
     margin: 0;
     background: #000; }
-    header nav ul li {
+    header nav.background ul li {
+      list-style: none;
+      display: inline-block; }
+      header nav.background ul li a {
+        display: block;
+        padding: 10px 10px; }
+      header nav.background ul li:first-child {
+        padding-left: 0; }
+    header nav.background ul li:hover ul {
+      display: block;
+      position: absolute;
+      min-width: 160px; }
+    header nav.background ul ul {
+      display: none; }
+      header nav.background ul ul li {
+        display: block;
+        padding-left: 0; }
+        header nav.background ul ul li a {
+          display: block;
+          padding: 6px 8px; }
+header nav.flush {
+  position: relative;
+  z-index: 99; }
+  header nav.flush ul {
+    margin: 0; }
+    header nav.flush ul li {
       list-style: none;
       display: inline-block;
-      margin-left: 1.5rem; }
-      header nav ul li a {
+      margin-left: 1.5rem;
+      position: relative; }
+      header nav.flush ul li a {
+        color: #000;
         display: block;
-        margin: 10px 0; }
-      header nav ul li:first-child {
+        padding: 10px 0; }
+        header nav.flush ul li a:hover {
+          color: #f00; }
+      header nav.flush ul li:first-child {
         margin-left: 0; }
-    header nav ul li:hover ul {
-      display: block;
+      header nav.flush ul li:hover > a {
+        color: #f00; }
+    header nav.flush ul li:hover ul {
+      visibility: visible;
+      display: block; }
+    header nav.flush ul ul {
+      background: #fff;
+      left: -8px;
+      min-width: 150px;
+      visibility: hidden;
       position: absolute; }
-    header nav ul ul {
-      display: none; }
-      header nav ul ul li {
+      header nav.flush ul ul li {
         display: block;
         margin-left: 0; }
-        header nav ul ul li a {
+        header nav.flush ul ul li a {
           display: block;
-          margin: 6px 8px; }
+          padding: 6px 8px; }
 
 a.left-off-canvas-toggle {
   font-size: 1.5rem; }

@@ -8,25 +8,52 @@ Author URI: http://www.power-marketing.com/
 
 $white:#ffffff;
 $black: #000;
+$gray-light: #EEE;
 
 html {}
-body{}
+body{overflow:visible;}
+
+$flush-top: #000;
+$flush-top-hover: #f00; 
 
 header {
   .logo {}
-  nav {position:relative; z-index:99;
+  // Navigation Bar with Background
+  nav.background {position:relative; z-index:99;
     // Top Level Links
     ul {margin:0; background:$black;
-      li {list-style:none; display:inline-block; margin-left:1.5rem;
-        a {display:block; margin:10px 0;}
-      &:first-child {margin-left:0;}
+      li {list-style:none; display:inline-block;
+        a {display:block; padding:10px 10px;}
+      &:first-child {padding-left:0;}
       }
-      li:hover ul {display:block; position:absolute;}
+      li:hover ul {display:block; position:absolute; min-width:160px;}
       // Sub Navigation
       ul {display:none;
-        li {display:block; margin-left:0;
-          a {display:block; margin:6px 8px;}
-} } } } }
+        li {display:block; padding-left:0;
+          a {display:block; padding:6px 8px;}
+} } } }
+  // Flush Navigation
+  nav.flush {position:relative; z-index:99;
+      // Top Level Links
+      ul {margin:0; 
+        li {list-style:none; display:inline-block; margin-left:1.5rem; position:relative;
+          a {color:$flush-top; display:block; padding:10px 0; 
+          &:hover {color:$flush-top-hover;}
+          }
+        &:first-child {margin-left:0;}
+        &:hover > a {color:$flush-top-hover;}
+        }
+        li:hover ul {visibility:visible; display:block;}
+        // Sub Navigation
+        ul {background:#fff; left:-8px; min-width:150px; visibility:hidden; position:absolute; 
+          li {display:block; margin-left:0;
+            a {display:block; padding:6px 8px;}
+  } } } }
+
+}
+
+
+
 
 // Mobile Button
 a.left-off-canvas-toggle {font-size:1.5rem; 
