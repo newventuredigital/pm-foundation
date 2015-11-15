@@ -11,10 +11,12 @@ $black: #000;
 $gray-light: #EEE;
 
 html {}
-body{overflow:visible;}
+body{}
 
 $flush-top: #000;
 $flush-top-hover: #f00; 
+
+.body-wrap {min-height:500px;}
 
 header {
   .logo {}
@@ -25,11 +27,12 @@ header {
       li {list-style:none; display:inline-block;
         a {display:block; padding:10px 10px;}
       &:first-child {padding-left:0;}
+
       }
       li:hover ul {display:block; position:absolute; min-width:160px;}
       // Sub Navigation
       ul {display:none;
-        li {display:block; padding-left:0;
+        li {display:block; padding-left:0; max-width:220px;
           a {display:block; padding:6px 8px;}
 } } } }
   // Flush Navigation
@@ -77,6 +80,12 @@ aside.left-off-canvas-menu {
 } } } } }
 
 footer {}
+
+.sidebar {
+  ul {margin-left:0;
+    li {list-style:none;}
+  }
+}
 
 .post-excerpt {}
 .post-single {}

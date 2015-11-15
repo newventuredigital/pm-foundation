@@ -1,9 +1,9 @@
 <footer>
-  <div class="row">
-    <div class="columns">
-      &copy; <?php echo date('Y');?> <?php bloginfo('title'); ?>, All Rights Reserved.
-    </div>
-  </div>
+	<div class="row">
+		<div class="columns">
+			&copy; <?php echo date('Y');?> <?php bloginfo('title'); ?>, All Rights Reserved.
+		</div>
+	</div>
 </footer>
 
 <!-- Close Off Canvas Start -->
@@ -14,7 +14,7 @@
 
 <?php wp_footer(); ?>
 <script>
-$(document).foundation();
+	$(document).foundation();
 </script>
 </body>
 </html>

@@ -5,8 +5,8 @@ Description: Custom Wordpress Theme developed by Michael Roach
 Author: Power Marketing
 Author URI: http://www.power-marketing.com/
 */
-body {
-  overflow: visible; }
+.body-wrap {
+  min-height: 500px; }
 
 header nav.background {
   position: relative;
@@ -30,7 +30,8 @@ header nav.background {
       display: none; }
       header nav.background ul ul li {
         display: block;
-        padding-left: 0; }
+        padding-left: 0;
+        max-width: 220px; }
         header nav.background ul ul li a {
           display: block;
           padding: 6px 8px; }
@@ -98,6 +99,11 @@ aside.left-off-canvas-menu nav ul {
         padding-top: 7.5px; }
       aside.left-off-canvas-menu nav ul ul li:last-child {
         padding-bottom: 7.5px; }
+
+.sidebar ul {
+  margin-left: 0; }
+  .sidebar ul li {
+    list-style: none; }
 
 .post-navigation {
   text-align: center; }
