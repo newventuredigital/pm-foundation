@@ -32,9 +32,9 @@
 			<?php wp_nav_menu(array(
 				'container' => false, 'theme_location' => 'main-nav-menu', 'items_wrap' => '<nav class="show-for-large-up background %2$s"><ul>%3$s</ul></nav>')); ?>
 				
-			<!-- Flush Menu w/No Background
+			<!-- Flush Menu w/No Background -->
 			<?php wp_nav_menu(array('container' => false, 'theme_location' => 'main-nav-menu', 'items_wrap' => '<nav class="show-for-large-up flush %2$s"><ul>%3$s</ul></nav>')); ?>
-			-->
+			
 
 			<a class="left-off-canvas-toggle hide-for-large-up" href="#" ><i class="fa fa-bars"></i> Menu</a>
 		</div>

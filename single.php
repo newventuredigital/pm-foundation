@@ -9,7 +9,7 @@
 			<?php the_content(); ?>
 		</div>
 
-		<!--
+		<!-- Next & Previous Navigation Links
 		<div class="post-navigation">
 			<?php /* if (get_previous_post() || get_next_post()) {
 				if (get_previous_post() && get_next_post()) {

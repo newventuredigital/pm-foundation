@@ -13,15 +13,18 @@ header nav.background {
   z-index: 99; }
   header nav.background ul {
     margin: 0;
-    background: #000; }
+    background: #666; }
     header nav.background ul li {
       list-style: none;
       display: inline-block; }
       header nav.background ul li a {
+        color: #333;
         display: block;
         padding: 10px 10px; }
       header nav.background ul li:first-child {
         padding-left: 0; }
+      header nav.background ul li:hover > a {
+        color: #F00; }
     header nav.background ul li:hover ul {
       display: block;
       position: absolute;
@@ -35,6 +38,8 @@ header nav.background {
         header nav.background ul ul li a {
           display: block;
           padding: 6px 8px; }
+        header nav.background ul ul li:hover {
+          background: #777; }
 header nav.flush {
   position: relative;
   z-index: 99; }
@@ -61,7 +66,7 @@ header nav.flush {
     header nav.flush ul ul {
       background: #fff;
       left: -8px;
-      min-width: 150px;
+      min-width: 190px;
       visibility: hidden;
       position: absolute; }
       header nav.flush ul ul li {

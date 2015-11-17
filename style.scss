@@ -13,8 +13,11 @@ $gray-light: #EEE;
 html {}
 body{}
 
-$flush-top: #000;
-$flush-top-hover: #f00; 
+
+$link-bg: #666;
+$link-color: #333;
+$link-hover: #F00;
+$link-hover-bg: #777;
 
 .body-wrap {min-height:500px;}
 
@@ -23,10 +26,11 @@ header {
   // Navigation Bar with Background
   nav.background {position:relative; z-index:99;
     // Top Level Links
-    ul {margin:0; background:$black;
+    ul {margin:0; background:$link-bg;
       li {list-style:none; display:inline-block;
-        a {display:block; padding:10px 10px;}
+        a {color:$link-color; display:block; padding:10px 10px;}
       &:first-child {padding-left:0;}
+      &:hover > a {color:$link-hover;}
 
       }
       li:hover ul {display:block; position:absolute; min-width:160px;}
@@ -34,21 +38,25 @@ header {
       ul {display:none;
         li {display:block; padding-left:0; max-width:220px;
           a {display:block; padding:6px 8px;}
+        &:hover {background:$link-hover-bg}
 } } } }
+
+  $link-color: #000;
+  $link-color-hover: #f00; 
   // Flush Navigation
   nav.flush {position:relative; z-index:99;
       // Top Level Links
       ul {margin:0; 
         li {list-style:none; display:inline-block; margin-left:1.5rem; position:relative;
-          a {color:$flush-top; display:block; padding:10px 0; 
-          &:hover {color:$flush-top-hover;}
+          a {color:$link-color; display:block; padding:10px 0; 
+          &:hover {color:$link-color-hover;}
           }
         &:first-child {margin-left:0;}
-        &:hover > a {color:$flush-top-hover;}
+        &:hover > a {color:$link-color-hover;}
         }
         li:hover ul {visibility:visible; display:block;}
         // Sub Navigation
-        ul {background:#fff; left:-8px; min-width:150px; visibility:hidden; position:absolute; 
+        ul {background:#fff; left:-8px; min-width:190px; visibility:hidden; position:absolute; 
           li {display:block; margin-left:0;
             a {display:block; padding:6px 8px;}
   } } } }
